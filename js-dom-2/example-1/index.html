@@ -7,12 +7,14 @@
   </head>
   <body>
     <input id="fullname" type="text" placeholder="Full Name" />
+    <input id="nickname" type="text" placeholder="Nick Name" />
     <button onClick="welcome()">Submit</button>
   </body>
   <script type="text/javascript">
     const welcome = () => {
       const fullname = document.querySelector("#fullname").value;
-      alert("Welcome " + fullname);
+      const nickname = document.querySelector("#nickname").value;
+      alert("Welcome " + fullname + " " + nickname);
     };
   </script>
 </html>
