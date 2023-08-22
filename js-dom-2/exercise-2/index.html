@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS-DOM-2 Example 2</title>
-  </head>
-  <body>
-    <input id="fullname" type="text" placeholder="Full Name" />
-    <input id="nickname" type="text" placeholder="NickName" />
-    <button onClick="createHTML()">Submit</button>
-    <ul></ul>
-  </body>
-  <script type="text/javascript">
-    const createHTML = () => {
-      const fullname = document.querySelector("#fullname");
-      const nickname = document.querySelector("#nickname");
 
-      // select ul first here
-      const dive = document.querySelector("....");
-      dive.innerHTML = // code here
-    };
-  </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS-DOM-2 Example 2</title>
+</head>
+
+<body>
+  <input id="fullname" type="text" placeholder="Full Name" />
+  <input id="nickname" type="text" placeholder="NickName" />
+  <button onClick="createHTML()">Submit</button>
+  <ul>
+  </ul>
+</body>
+<script type="text/javascript">
+  const createHTML = () => {
+    const fullname = document.querySelector("#fullname").value;
+    const nickname = document.querySelector("#nickname").value;
+    // select ul first here
+    const dive = document.querySelector("ul");
+    dive.innerHTML += (`<li> ${fullname} ${nickname}</li>`)
+  };
+</script>
+
 </html>

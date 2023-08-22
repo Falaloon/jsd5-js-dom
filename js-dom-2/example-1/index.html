@@ -8,16 +8,17 @@
 </head>
 
 <body>
-  <h1></h1>
   <input id="fullname" type="text" placeholder="Full Name" />
   <input id="nickname" type="text" placeholder="Nick Name" />
   <button onClick="welcome()">Submit</button>
+  <h1></h1>
 </body>
 <script type="text/javascript">
   const welcome = () => {
     const fullname = document.querySelector("#fullname").value;
     const nickname = document.querySelector("#nickname").value;
-    document.querySelector('h1').innerHTML = ("Welcome " + fullname + " " + nickname);
+    const display = ("Welcome " + fullname + " " + nickname);
+    document.querySelector('h1').innerHTML = display
     // alert("Welcome " + fullname + " " + nickname);
   };
 </script>
