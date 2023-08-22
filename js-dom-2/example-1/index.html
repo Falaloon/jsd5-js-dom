@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS-DOM-2 Example 1</title>
-  </head>
-  <body>
-    <input id="fullname" type="text" placeholder="Full Name" />
-    <input id="nickname" type="text" placeholder="Nick Name" />
-    <button onClick="welcome()">Submit</button>
-  </body>
-  <script type="text/javascript">
-    const welcome = () => {
-      const fullname = document.querySelector("#fullname").value;
-      const nickname = document.querySelector("#nickname").value;
-      alert("Welcome " + fullname + " " + nickname);
-    };
-  </script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS-DOM-2 Example 1</title>
+</head>
+
+<body>
+  <h1></h1>
+  <input id="fullname" type="text" placeholder="Full Name" />
+  <input id="nickname" type="text" placeholder="Nick Name" />
+  <button onClick="welcome()">Submit</button>
+</body>
+<script type="text/javascript">
+  const welcome = () => {
+    const fullname = document.querySelector("#fullname").value;
+    const nickname = document.querySelector("#nickname").value;
+    document.querySelector('h1').innerHTML = ("Welcome " + fullname + " " + nickname);
+    // alert("Welcome " + fullname + " " + nickname);
+  };
+</script>
+
 </html>
