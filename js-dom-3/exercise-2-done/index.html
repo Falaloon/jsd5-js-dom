@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS-DOM-3 Exercise 2</title>
+</head>
+
+<body>
+  <input type="text" id="fullname" onChange="fullNameType(event)" placeholder="Type something" />
+
+  <input type="text" id="nickname" onChange="nickNameType(event)" placeholder="Type something" />
+
+  <h3>Fullname:</h3>
+  <div id="fullname-display"></div>
+  <h3>Nickname:</h3>
+  <div id="nickname-display"></div>
+
+  <script>
+    // const FullnameDiv = document.querySelector("#fullname-display");
+    // const nicknameDiv = document.querySelector("#nickname-display");
+
+    function fullNameType(event) {
+      // write code here
+      const Fullname = event.target.value;
+      const FullnameDiv = document.querySelector("#fullname-display");
+      FullnameDiv.innerHTML = Fullname;
+    }
+
+    function nickNameType(event) {
+      // write code here
+      const Nickname = event.target.value;
+      const nicknameDiv = document.querySelector("#nickname-display");
+      nicknameDiv.innerHTML = Nickname;
+    }
+  </script>
+</body>
+
+</html>

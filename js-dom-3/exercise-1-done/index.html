@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS-DOM-3 Exercise 1</title>
+</head>
+
+<body>
+  <select id="mySelect" onChange="careerselector(event)">
+    <option value="programmer">Programmer</option>
+    <option value="doctor">Doctor</option>
+    <option value="creator">Creator</option>
+  </select>
+
+  <script>
+    // write your function here.
+    function careerselector() {
+      const selectedValue = event.target.value;
+      alert(selectedValue); //วิธีเขียนที่สั้นกว่า
+
+      // const selectedValue = document.querySelector("#mySelect")
+      // alert(selectedValue.value); //วิธีเขียนที่ยาว
+    }
+  </script>
+</body>
+
+</html>
