@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniproject by myself</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Bai Jamjuree' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="card">
+        <div class="profile-card">
+
+            <div class="imgBlock">
+                <img id="UploasImgBlock" class="image" src="" alt="image is loading">
+            </div>
+
+            <div class="infoBlock">
+                <h2 id="editname-display">Name</h2>
+                <div class="info-detail">
+                    <p id="editbirthday-display">Date of Birth: </p>
+                    <p id="editExpirationDate-display">Expiration Date: </p>
+                    <p id="editLicense-display">License No: </p>
+                    <p id="editState-display">State: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="edit-card">
+        <h2>Edit ID Card Data</h2>
+        <p>Name:</p>
+        <input type="text" id="editName" onChange="editNameType(event)" placeholder="Type something" />
+
+        <p>Date of Birth: </p>
+        <input type="date" id="DateofBirth" onChange="DateofBirth(event)" />
+
+        <p>Expiration Date: </p>
+        <input type="date" id="ExpirationDate" onChange="ExpirationDatechose(event)" />
+
+        <p>License No:</p>
+        <input type="text" id="editLicense" onChange="editLicenseType(event)" placeholder="License No" />
+
+        <p>State: </p>
+        <input type="text" id="editState" onChange="editStateType(event)" placeholder="State" />
+
+        <p>Image Upload: </p>
+        <input type="text" id="laodImg" onChange="editStateType(event)" placeholder="URL" />
+
+        <button type="submit" id="Updatebutton" onClick="updateDaata()">Update</button>
+
+
+
+        <script>
+            editNameType = (event) => {
+                const Fullname = event.target.value;
+                const FullnameDiv = document.querySelector("#editname-display");
+                FullnameDiv.innerHTML = Fullname;
+            }
+
+            DateofBirth = (event) => {
+                const editDate = event.target.value;
+                const editDateofBirth = document.querySelector("#editbirthday-display");
+                editDateofBirth.innerHTML = `Date of Birth: ${editDate}`;
+            }
+
+            ExpirationDatechose = (event) => {
+                const editExpirationDate = event.target.value;
+                const editDate = document.querySelector("#editExpirationDate-display");
+                editDate.innerHTML = `Expiration Date: ${editExpirationDate}`;
+            }
+
+            editLicenseType = (event) => {
+                const License = event.target.value;
+                const editLicense = document.querySelector("#editLicense-display");
+                editLicense.innerHTML = `License No: ${License} `;
+            }
+
+            editStateType = (event) => {
+                const State = event.target.value;
+                const editState = document.querySelector("#editState-display");
+                editState.innerHTML = `State: ${State} `;
+            }
+
+        </script>
+
+
+
+
+    </div>
+</body>
+
+</html>

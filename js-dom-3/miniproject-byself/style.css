@@ -1,0 +1,41 @@
+html{
+    font-family: 'Bai Jamjuree';
+    font-size: 16px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+}
+.profile-card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(4, 60, 242);
+    padding: 16px;
+}
+
+.imageBlock{
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+    margin-bottom: 16px;
+}
+
+.image{
+width: 100%;
+border-radius: 100%;
+
+}
+
+.infoBlock{
+    width: 300px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.info-detail{
+    text-align: start;
+}
+
